@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UFT-8">
+  <link rel="stylesheet" href=acceuil.css>
+  <title>Kumquat'uor</title>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo_long_final.png" alt="logo_long_final">
+        <ul class="navbar" id="myNavbar">
+          <span onclick="openNav()"><a>&#9776;</a></span>
+          <a href="acceuil.html">acceuil</a>
+          <a href="infos.html">infos</a>
+          <a href="events.html">events</a>
+          <a href="galerie.html">galerie</a>
+        </ul>
+        <a href="contact.html"><button>contact</button></a>
+    </header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="acceuil.html">acceuil</a>
+        <a href="infos.html">infos</a>
+        <a href="events.html">events</a>
+        <a href="galerie.html">galerie</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+
+    <h1>Le <strong>Kumquat'uor</strong></h1>
+    <h2>est form&eacute de quatre jeunes <strong>saxophonistes</strong> amateurs</h2>
+    <h3>et propose des amimations musicales <strong>originales</strong> et <strong>qualitatives</strong>, ainsi que de magnifiques concerts.</h3>
+    <div class="grid-container">
+      <div class="animations">
+        Vous souhaitez nous avoir pour votre prochain &eacutev&eacutenement priv&eacute&nbsp? <br> Informez-vous <a href="infos.html">ici</a> ou <br> prenez directement contact avec nous <a href="contact.html">ici</a>.
+      </div>
+      <div class="grid-item">
+        Vous souhaitez nous voir en concert prochainement&nbsp? <br> Vous trouverez toutes les prochaines dates <a href="events.html">ici</a>.
+      </div>
+    </div>
+</body>

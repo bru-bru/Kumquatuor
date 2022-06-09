@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FF9494;
+}
+
+header {
+    height: 105px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 30px;
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul a {
+    margin-right: 30px;
+    list-style: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+ul a:first-child {
+    font-size: 40px;
+}
+
+ul a, button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #3368A6;
+    border: none;
+    border-radius: 50px;
+}
+
+ul a:hover {
+    color: #3368A6;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffae008e;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (min-width: 1100px) {
+    .navbar a:first-child {
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+  }
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.coordonnees {
+    position: relative;
+    display: block;
+    align-items: center;
+    margin: 100px 0px 0px 0px;
+}
+
+.coordonnees p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    word-spacing: 3%;
+
+    padding: 10px;
+    margin:  5px;
+}
+
+.coordonnees p:first-child {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    word-spacing: 3%;
+
+    padding: 10px 20px;
+    margin: 10px;
+}
+.coordonnees a {
+    color: #3368A6;
+    font-size: 25px;
+    text-decoration: none;
+}
